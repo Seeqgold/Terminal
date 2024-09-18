@@ -108,7 +108,7 @@ input{
     padding: 0px;
     border: none ;
     margin-top: 140px;
-    
+ 
 }
 #interswitch{
     height: 30px;
@@ -207,13 +207,14 @@ header{
     
 }
 #product-div{
-    width: 70%;
+    width: 59.8vw;
     height: 480px;
     background-image: url("./Backgrounds\ Green.jpeg");
     background-size: cover;
     position: relative;
-    left: 28.5%;
-    margin-top: 5px;
+    right: -27vw;
+    margin-top: -28px;
+    display: inline-block;
 }
 .item{
     width: 184px;
@@ -257,21 +258,89 @@ h5{
     font-size: 10px;
 }
 th{
-    border-left: 1px solid gray;
-    padding-left: 0px;
+    border-left: 0.3px solid rgb(218, 205, 205);
+    text-align: left;
+    padding: 4px 10px;
     background-color: white;
-    font-size: 12px;
-
+    font-size: 13px;
 }
+hr{
+    width: 26.4vw;
+    border-bottom: 1px solid gray;
+    height: 25px;
+    position: absolute;
+}
+.qty{
+    width: 53px;
+    height: 18px;
+}
+
 #t1{
-    width: 130px;
-    height: 20px;
+    width: 180px;
+    height: 18px;
     
 }
-/*
+
 #table-div{
-    width: 260px;
-    height: 120px;
-    background-color: aliceblue;
+    width: 26.4vw;
+    height: 55vh;
+    background-color: white;
     float: left;
+    margin: 25px 0 3px 13px;
+}
+#tender-div{
+    width: 26.4vw;
+    height: 17.9vh;
+    background-color: transparent;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 13.2vh;
+}
+.tender-type{
+    width: 26.4vw;
+    height: 17.9vh;
+    background-color: yellow;
+    padding: 5px;
+    display: flex;
+}
+#tender-div> p{
+    position: absolute;
+    top: -11px;
+    width: 127px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.radio-div {
+    width: 120px;
+    height: 17.9vh;
+    background-color: brown;
+    color: black;
+    font-size: 12px;
+    margin: -190px 4px;
+
+}
+.radio-div1 {
+    width: 120px;
+    height: 17.9vh;
+    background-color: green;
+    color: black;
+    font-size: 12px;
+    margin: -190px 4px;
+}
+.radio-div2{
+    width: 120px;
+    height: 10.9vh;
+    background-color: blue;
+    color: black;
+    font-size: 12px;
+    margin: -145px 4px; 
+}
+input{
+    width: 12px;
+    margin: 2px 0px;
+}
+.pay-button{
+    
 }

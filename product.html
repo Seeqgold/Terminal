@@ -20,9 +20,32 @@
             <div id="table-div">
                 <table>
                     <th id="t1">PRODUCT</th>
-                    <th>QTY</th>
+                    <th class="qty">QTY</th>
                     <th id="t1">PRICE</th>
+                    <hr>
+                    <td></td>
                 </table>
+                <div id="tender-div">
+                  <p>TENDER TYPE</p>
+                  <div class="tender-type">
+                    <div class="radio-div">
+                    <input type="radio" name="tender" value="card">CARD <br>
+                    <input type="radio" name="tender" value="QR"  />QR <br>
+                    <input type="radio" name="tender" value="paycode">PAYCODE <br>
+                    <input type="radio" name="tender" value="cash">CASH<br>
+                    <input type="radio" name="tender" value="ussd">USSD
+                </div> 
+                <div class="radio-div1">
+                    <input type="radio" name="tender" value="Savings">Savings <br>
+                    <input type="radio" name="tender" value="Current"  />Current <br>
+                    <input type="radio" name="tender" value="Credit">Credit <br>
+                    <input type="radio" name="tender" value="Dafault">Default
+                </div> 
+                <div class="radio-div2">
+                    <input class="pay-button" type="button" value="Pay">
+                    <input class="pay-button" type="button" value="New Sale">
+                </div>
+                </div>
             </div>
             <div id="product-div">
                 <div class="item">
