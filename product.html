@@ -11,39 +11,46 @@
 <body>
     <div id="product">
         <header>
-            <i></i>
+            <i class="fa-sharp fa-solid fa-arrow-up-long"></i>
             <i></i>
             <i></i>
         </header>
         <input id="search"placeholder="Seach Products"/>
-        <div>
+        <div id="container">
             <div id="table-div">
                 <table>
+                    <tr>
                     <th id="t1">PRODUCT</th>
                     <th class="qty">QTY</th>
                     <th id="t1">PRICE</th>
+                </tr>
                     <hr>
-                    <td></td>
+                    <tbody>
+
+                    </tbody>
                 </table>
+                <div id="amount-div">
+                    <label>Total: N<span id="total-amount">0</span></label>
+                </div>
                 <div id="tender-div">
                   <p>TENDER TYPE</p>
                   <div class="tender-type">
                     <div class="radio-div">
-                    <input type="radio" name="tender" value="card">CARD <br>
-                    <input type="radio" name="tender" value="QR"  />QR <br>
-                    <input type="radio" name="tender" value="paycode">PAYCODE <br>
-                    <input type="radio" name="tender" value="cash">CASH<br>
-                    <input type="radio" name="tender" value="ussd">USSD
+                    <input type="radio" name="tender1" value="card"><p>CARD </p><br>
+                    <input type="radio" name="tender1" value="QR"><p>QR </p><br>
+                    <input type="radio" name="tender1" value="paycode"><p>PAYCODE </p><br>
+                    <input type="radio" name="tender1" value="cash"><p>CASH</p><br>
+                    <input type="radio" name="tender1" value="ussd"><p>USSD</p>
                 </div> 
                 <div class="radio-div1">
-                    <input type="radio" name="tender" value="Savings">Savings <br>
-                    <input type="radio" name="tender" value="Current"  />Current <br>
-                    <input type="radio" name="tender" value="Credit">Credit <br>
-                    <input type="radio" name="tender" value="Dafault">Default
+                    <input type="radio" name="tender2" value="Savings"><p>Savings </p> <br>
+                    <input type="radio" name="tender2" value="Current"> <p> Current </p> <br>
+                    <input type="radio" name="tender2" value="Credit"><p>Credit </p><br>
+                    <input type="radio" name="tender2" value="Dafault"><p> Default </p>
                 </div> 
                 <div class="radio-div2">
                     <input class="pay-button" type="button" value="Pay">
-                    <input class="pay-button" type="button" value="New Sale">
+                    <input class="pay-button" id="New-sale" type="button" value="New Sale">
                 </div>
                 </div>
             </div>
@@ -76,8 +83,20 @@
                     <h5>Qty: 12</h5></div>
             </div>
         </div>
-        <footer></footer>
+        
+            <div id="com-div">
+                <h4>CHANGE COMMS:</h4>
+                <p> STATUS:</p>
+                 <select name="com-port" id="com-port">
+                        <option value=""></option>
+                    <option value="">COM3</option>
+                    <option value="">COM4</option>
+                    <option value="">COM7</option>
+                </select>
+            </div>
+       
     </div>
+    <script src="./Scripts/product.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

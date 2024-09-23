@@ -59,7 +59,7 @@ label{
     padding: 0px 4px;
 
 }
-input{
+#user, #password{
     height: 20px;
     width: 180px;
     position: relative;
@@ -194,8 +194,15 @@ header{
     background-color:rgb(167, 182, 199);
 
 }
+.fa-arrow-up-long{
+    background-color: brown;
+    margin-left: 60px;
+    width: 40px;
+    height: 70px;
+}
 #search{
     width: 54%;
+    height:20px;
     color: black;
     font-size: 12px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -208,16 +215,18 @@ header{
 }
 #product-div{
     width: 59.8vw;
-    height: 480px;
+    height: 435px;
     background-image: url("./Backgrounds\ Green.jpeg");
     background-size: cover;
     position: relative;
     right: -27vw;
-    margin-top: -28px;
+    margin-top: -48px;
     display: inline-block;
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
 }
 .item{
-    width: 184px;
+    width: 164px;
     height: 100px;
     background-color: white;
     border-radius: 3px;
@@ -270,6 +279,15 @@ hr{
     height: 25px;
     position: absolute;
 }
+tbody{
+    padding: 9px;
+    
+}
+#amount-div{
+    position: relative;
+    top: 70px;
+    font-size: 18px;
+}
 .qty{
     width: 53px;
     height: 18px;
@@ -290,16 +308,16 @@ hr{
 }
 #tender-div{
     width: 26.4vw;
-    height: 17.9vh;
+    height: 18vh;
     background-color: transparent;
     border: 1px solid white;
     position: absolute;
-    bottom: 13.2vh;
+    bottom: 12vh;
 }
 .tender-type{
     width: 26.4vw;
-    height: 17.9vh;
-    background-color: yellow;
+    height: 19vh;
+    background-color: transparent;
     padding: 5px;
     display: flex;
 }
@@ -308,39 +326,120 @@ hr{
     top: -11px;
     width: 127px;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bolder;
 }
 
 .radio-div {
     width: 120px;
     height: 17.9vh;
-    background-color: brown;
-    color: black;
-    font-size: 12px;
-    margin: -190px 4px;
+    margin: 1px 4px;
 
 }
-.radio-div1 {
-    width: 120px;
-    height: 17.9vh;
-    background-color: green;
+.radio-div>input{
+    width: 12px;
+    width: 12px;
+    margin: -10px 3px;
+}
+.radio-div>p, .radio-div2> p{
     color: black;
     font-size: 12px;
-    margin: -190px 4px;
+    font-weight: bolder;
+    margin: -20px 10px;
+}
+.radio-div1>p{
+    color: black;
+    font-size: 13px;
+    font-weight: bolder;
+    margin: -23px 28px -14px;
+}
+
+.radio-div1 {
+    width: 100px;
+    height: 15vh;
+    border: 1px solid white;
+    background-color: transparent;
+    color: black;
+    font-size: 12px;
+    margin: 3px 2px;
+}
+.radio-div1>input{
+    margin: 5px 16px;
 }
 .radio-div2{
-    width: 120px;
-    height: 10.9vh;
-    background-color: blue;
-    color: black;
-    font-size: 12px;
-    margin: -145px 4px; 
+    height: 10vh;
+    font-size: 9px;
+    margin-top: 30px;
+    margin-left: 8px;
+
 }
 input{
     width: 12px;
-    margin: 2px 0px;
+    height: 12px;
+    margin: 4px;
 }
 .pay-button{
+    width: 86px;
+    height: 22px;
+    margin: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: rgb(92, 89, 89);
+    background-color: whitesmoke;
+}
+#New-sale{
+    color: rgb(45, 45, 75);
     
 }
+#New-sale:hover{
+    background-color:rgb(166, 184, 196);
+}
+#com-div{
+    height: 3.5vh;
+    width: 90vw;
+    position: absolute;
+    bottom: 41px;
+    right:50px
+    
+}
+#com-div>h4{
+    position: absolute;
+    right:115px;
+    background-color: transparent;
+    color: black;
+    top: -8px;
+}
+#com-div>p{
+    color: navy;
+    top: -3px;
+    position: absolute;
+    left: 190px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+#com-port{
+    position: absolute;
+    right: 35px;
+    background-color: whitesmoke;
+    color: black;
+    bottom: 3px;
+    width: 80px;
+    height: 20px;
+    border: none;
+
+}
+#com-port:hover{
+    border: none;
+}
+
+#com-port:visited{
+    border: none;
+}
+
+/*
+#tender-type-div{
+    width: 60px;
+    height: 10px;
+    background-color: blueviolet;
+}*/
