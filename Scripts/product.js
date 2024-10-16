@@ -5,7 +5,7 @@ document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('click', function() {
         const productName = this.querySelector('h4').textContent; // Get product name
         const productPrice = this.querySelector('p').textContent; // Get product price (e.g., N10)
-        const price = parseInt(productPrice.substring(1)); // Remove 'N' and convert to integer
+ const price = parseInt(productPrice.substring(1)); // Remove 'N' and convert to integer
 
         // Check if the product is already in the table
         const existingRow = document.querySelector(`#table-div table tr[data-name="${productName}"]`);

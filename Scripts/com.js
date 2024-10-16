@@ -3,7 +3,7 @@ const Readline = require('@serialport/parser-readline');
 
 // Replace 'COM3' with your actual COM port
 const port = new SerialPort({
-  path: 'COM7', // Specify the path for the COM port
+  path: 'COM10', // Specify the path for the COM port
   baudRate: 115200 // Adjust the baud rate as needed
 });
 
@@ -17,7 +17,7 @@ port.on('open', () => {
   const request = `
 <request>
 <command>initSerialPort</command>
-<serialPort>COM7</serialPort>
+<serialPort>COM10</serialPort>
 </request>
 `;
 

@@ -297,6 +297,8 @@ tbody{
     width: 180px;
     height: 18px;
     
+} tr{
+    margin: 10px;
 }
 
 #table-div{

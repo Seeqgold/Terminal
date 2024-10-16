@@ -11,7 +11,7 @@
 <body>
     <div id="product">
         <header>
-            <i class="fa-sharp fa-solid fa-arrow-up-long"></i>
+           <!------<i class="fa-sharp fa-solid fa-arrow-up-long"></i>-->
             <i></i>
             <i></i>
         </header>
@@ -36,7 +36,7 @@
                   <p>TENDER TYPE</p>
                   <div class="tender-type">
                     <div class="radio-div">
-                    <input type="radio" name="tender1" value="card"><p>CARD </p><br>
+                    <input type="radio" name="tender1" value="card" checked><p>CARD </p><br>
                     <input type="radio" name="tender1" value="QR"><p>QR </p><br>
                     <input type="radio" name="tender1" value="paycode"><p>PAYCODE </p><br>
                     <input type="radio" name="tender1" value="cash"><p>CASH</p><br>
@@ -46,7 +46,7 @@
                     <input type="radio" name="tender2" value="Savings"><p>Savings </p> <br>
                     <input type="radio" name="tender2" value="Current"> <p> Current </p> <br>
                     <input type="radio" name="tender2" value="Credit"><p>Credit </p><br>
-                    <input type="radio" name="tender2" value="Dafault"><p> Default </p>
+                    <input type="radio" name="tender2" value="Dafault" checked><p> Default </p>
                 </div> 
                 <div class="radio-div2">
                     <input class="pay-button" type="button" value="Pay">
@@ -90,13 +90,17 @@
                  <select name="com-port" id="com-port">
                         <option value=""></option>
                     <option value="">COM3</option>
-                    <option value="">COM4</option>
                     <option value="">COM7</option>
+                    <option value="">COM10</option>
                 </select>
             </div>
        
     </div>
     <script src="./Scripts/product.js"></script>
+    <script src="./Scripts/com.js"></script>
+    <script src="./Scripts/payment.js"></script>
+    <script src="./Scripts/app.js"></script>
+   <script src="./Scripts/integration.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
