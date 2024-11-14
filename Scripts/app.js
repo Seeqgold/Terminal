@@ -9,7 +9,7 @@ ws.on('open', function open() {
 const request = `
 <request>
 <command>initSerialPort</command>
-<serialPort>COM10</serialPort>
+<serialPort>COM7</serialPort>
 </request>
 
 `;

@@ -15,7 +15,7 @@ ws.on('open', () => {
     const request = `
 <request>
 <command>initSerialPort</command>
-<serialPort>COM10</serialPort>
+<serialPort>COM7</serialPort>
 </request>
 `;
     ws.send(request);

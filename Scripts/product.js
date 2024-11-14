@@ -47,3 +47,27 @@ document.querySelectorAll('.item').forEach(item => {
         console.log(`Total Amount: N${totalAmount}`);
     });
 });
+// Get the "New Sale" button
+const newSaleButton = document.getElementById('New-sale');
+
+// Add event listener to the "New Sale" button
+newSaleButton.addEventListener('click', () => {
+    // Get the table
+    const table = document.querySelector('#table-div table');
+
+    // Remove all rows from the table
+    table.innerHTML = `
+        <tr>
+            <th id="t1">PRODUCT</th>
+            <th class="qty">QTY</th>
+            <th id="t1">PRICE</th>
+        </tr>
+        <hr>
+    `;
+
+    // Reset the total amount
+    totalAmount = 0;
+
+    // Update the displayed total amount
+    document.getElementById('total-amount').textContent = totalAmount;
+});
